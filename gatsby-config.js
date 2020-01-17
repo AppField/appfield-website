@@ -5,8 +5,9 @@
  */
 
 module.exports = {
-  plugins: [
-    'gatsby-plugin-typescript',
-    'gatsby-plugin-sass'
-  ]
+  siteMetadata: {
+    title: 'AppField',
+    author: 'Roman',
+  },
+  plugins: ['gatsby-plugin-typescript', 'gatsby-plugin-sass'],
 }
