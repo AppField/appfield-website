@@ -8,11 +8,17 @@ import layoutStyles from './layout.module.scss'
 const Layout = (props: { children: React.ReactNode }) => {
   return (
     <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header />
-        <section>{props.children}</section>
+      <div className={layoutStyles.headerContainer}>
+        <div className={layoutStyles.headerContent}>
+          <Header></Header>
+        </div>
       </div>
-      <Footer />
+
+      <main className={layoutStyles.mainContainer}>
+        <section className={layoutStyles.content}>{props.children}</section>
+
+        <Footer />
+      </main>
     </div>
   )
 }

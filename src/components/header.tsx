@@ -16,43 +16,43 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
+      <h1 className={headerStyles.title}>
+        <Link className={headerStyles.titleLink} to="/">
           {data.site.siteMetadata.title}
         </Link>
       </h1>
-      <nav>
+      <nav className={headerStyles.nav}>
         <ul className={headerStyles.navList}>
-          <li>
+          <li className={headerStyles.navItem}>
             <Link
-              className={headerStyles.navItem}
+              className={headerStyles.navItemLink}
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
               Home
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.navItem}>
             <Link
-              className={headerStyles.navItem}
+              className={headerStyles.navItemLink}
               activeClassName={headerStyles.activeNavItem}
               to="/blog"
             >
               Blog
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.navItem}>
             <Link
-              className={headerStyles.navItem}
+              className={headerStyles.navItemLink}
               activeClassName={headerStyles.activeNavItem}
               to="/about"
             >
               About
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.navItem}>
             <Link
-              className={headerStyles.navItem}
+              className={headerStyles.navItemLink}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >

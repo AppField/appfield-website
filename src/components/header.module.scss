@@ -1,22 +1,41 @@
 .header {
-  padding: 1rem 0 3rem;
+  display: flex;
+  padding: 1rem 0 1.5rem;
 }
 
 .title {
-  color: #000;
+  margin: 0;
+}
+
+.title-link {
+  color: var(--color);
   font-size: 3rem;
   text-decoration: none;
 }
 
+.nav {
+  flex-grow: 1;
+}
+
 .nav-list {
   display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
   list-style-type: none;
   margin: 0;
+  height: 100%;
 }
 
 .nav-item {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.nav-item-link {
+  display: flex;
+  align-items: center;
   color: #999;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-right: 1.3rem;
   text-decoration: none;
   transition: color 250ms;
